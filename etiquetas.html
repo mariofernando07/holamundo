@@ -77,6 +77,7 @@
         </table>
        <hr>
        <table border="1">
+          <caption>Nombre o descripción de la tabla</caption>
            <tr>
                 <td rowspan="2" colspan="2">Celda</td>
                 <td colspan="4">Celda</td>
@@ -99,6 +100,67 @@
                <td colspan="3">Celda</td>
                
            </tr>
-        </table>                 
+        </table>
+        <hr>
+        <table border="1">
+            <caption>Nombre o descripción de la tabla</caption>
+            <thead>
+               <tr>
+                   <th>Encabezado 1</th>
+                    <th>Encabezado 1</th>
+                </tr>
+            </thead>
+            <tbody>
+               <tr>
+                   <td>Contenido e1 f1</td>
+                   <td>Contenido e2 f1</td>
+               </tr>
+               <tr>
+                   <td>Contenido e1 f2</td>
+                   <td>Contenido e2 f2</td>
+               </tr>               
+            </tbody>
+            <tfoot>
+               <tr>
+                   <td>Resumen e1</td>
+                   <td>Resumen e2</td>
+               </tr>
+            </tfoot>
+        </table>
+        <hr>
+        <img src="images/html5.jpg" alt="HTML, JS, CSS">
+            <hr>
+           <form action="">
+               <label for="IdNombre">Nombre: </label>
+               <input type="text" id="IdNombre" placeholder="Nombre Completo" maxlength="120" size="120" required><br>
+               <label for="IdCedula">Cedula: </label>
+               <input type="number" id="IdCedula" min="1" required><br>
+               <input type="radio" name="genero" value="M" required>Masculino
+               <input type="radio" name="genero" value="F">Femenino<br> 
+               <label for="IdPassword">Contraseña: </label>
+               <input id="IdPassword" type="password" pattern="(?=.*/d)(?=.*[a-z])(?=.*[A-Z]){8,}" title="La contraseña debe tener al menos una letra minuscula y mayuscula como tambien un numero entero. Ademas su longitud debe ser ocho caracters"><br>
+               <label for="IdEmail">Email: </label>
+               <input type="email" id="IdEmail"> <br>
+               <textarea name="descripcion" id="IdDescripcion" cols="30" rows="10"></textarea> <br>
+               <select name="color">
+                   <optgroup label="Calidos">
+                        <option value="red">Rojo</option>
+                        <option value="green">Verde</option>
+                   </optgroup>
+                   <optgroup label="Frios">
+                        <option value="blue">Azul</option> 
+                   </optgroup>
+               </select>  <br> 
+               <datalist id="IdDiccionario">
+                    <option value="Dario"/>
+                    <option value="Maria"/>
+                    <option value="Juan"/>
+                    <option value="Chamorro"/>
+                    <option value="Juana"/>
+                </datalist>
+                <input list="IdDiccionario" placeholder="Nombre"/><br>         
+               <input type="submit" value="Guardar">
+               <input type="reset" value="Borrar"><br>
+           </form>
     </body>
 </html>
