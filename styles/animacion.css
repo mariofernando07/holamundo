@@ -1,0 +1,33 @@
+
+@keyframes movimiento {
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(360deg);
+    }
+    20% {
+        transform: translateX(1024px) rotate(360deg);    
+    }
+    30% {
+        transform: translateX(1024px) rotate(-360deg);
+    }
+    40% {
+        transform: translateX(0px);
+    }
+       
+}
+.nombre {
+    display: inline-block;
+    border-radius: 50%;
+    width: 50px;
+    padding: 2em;
+    background: darkcyan;
+    color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
+
+    animation-name: movimiento;
+    animation-duration: 10s;
+    /*animation-delay: retardo en s*/
+    animation-iteration-count: infinite;    
+}

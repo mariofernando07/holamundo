@@ -7,142 +7,150 @@
     <meta name="description" content="Manejo de html">
     <title>HTML BÁSICO</title>
     <link rel="shorcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/main.css">
+
 </head>
 
 <body>
-    <h1><q>TITULO</q> <i>PRINCIPAL<i></h1>
-        <p>Nuevo <b>Parrafo</b></p>
-       <hr>
-       <pre>Este es un texto con formato
-           asi que toma en cuenta los saltos de linea y espacios
-       </pre>
-      <br>
-      <blockquote>Esta es una cita x<sup>3</sup> log<sub>10</sub> 5</blockquote>
-    <p><ins>texto insertado</ins>
-    <del>texto eliminado</del>
-   <mark>texto marcado o resaltado</mark>
-   <abbr title=”hyper_text_marckup_language”>html</abbr>
-  <cite></cite>
- <pre>
-    <code>
-        public class MyClass {
-            var $atribute1;
-            var $atribute2;
-        }
-    </code>
-   <time datetime="2016-12-24T00:00:00">Navidad</time>
- </pre>
-   </p>
-  <meter value="5" min="0" max="10">Mitad</meter>
-  <hr>
- <progress value="50" max="100" ></progress>
-   <h2>Ordenada</h2>
-        <ol>
-           <li>Primer valor</li>
-           <li>Segundo valor</li>
-           <li>tercer valor</li>
-        </ol>
-        <h2>Desordenada</h2>
-        <ul>
-           <li>Primer valor</li>
-           <li>Segundo valor</li>
-           <li>tercer valor</li>
-        </ul> 
-        <h2>Definicion</h2>
-        <dl>
-           <dt>Primera 
-              <dd>primera descripcion</dd>
-           </dt>
-           <dt>Segunda
-              <dd>segunda descripcion</dd>
-           </dt>          
-        </dl>
-       <hr>
-        <table border="1">
-           <tr>
-              <th>Nombre</th>
-              <th>Cedula</th>
-              <th>Celular</th>
-           </tr>
-          <tr>
-             <td>Mi Nombre</td>
+    <a href="index.html">Index</a>>Etiquetas <br>
+    <a href="#formularios">Formularios</a> |
+    <a href="#tablas">Tablas</a> |
+    <a href="#listas">Listas</a> |
+    <a href="#frames">Frames</a>
+    <h1><q>TITULO</q> <i>PRINCIPAL</i></h1>
+    <p>Nuevo <b>Parrafo</b></p>
+    <hr>
+    <pre>Este es un texto con formato asi que toma en cuenta los saltos de linea y espacios
+    </pre>
+    <br>
+    <blockquote>Esta es una cita x<sup>3</sup> log<sub>10</sub> 5</blockquote>
+    <p>
+        <ins>texto insertado</ins>
+        <del>texto eliminado</del>
+        <mark>texto marcado o resaltado</mark>
+        <abbr title=”hyper_text_marckup_language”>html</abbr>
+        <cite></cite>
+        <pre>
+            <cod class="contenido">
+                public class MyClass { var $atribute1; var $atribute2; }
+                </code>
+                <time datetime="2016-12-24T00:00:00">Navidad</time>
+        </pre>
+    </p>
+    <meter value="5" min="0" max="10">Mitad</meter>
+    <hr>
+    <progress value="50" max="100"></progress>
+    <a id="listas"></a>
+    <h2>Ordenada</h2>
+    <ol>
+        <li>Primer valor</li>
+        <li>Segundo valor</li>
+        <li>tercer valor</li>
+    </ol>
+    <h2>Desordenada</h2>
+    <ul>
+        <li>Primer valor</li>
+        <li>Segundo valor</li>
+        <li>tercer valor</li>
+    </ul>
+    <h2>Definicion</h2>
+    <dl>
+        <dt>Primera
+            <dd>primera descripcion</dd>
+        </dt>
+        <dt>Segunda
+            <dd>segunda descripcion</dd>
+        </dt>
+    </dl>
+    <hr>
+
+    <a id="tablas"></a>
+    <table border="1">
+        <tr>
+            <th>Nombre</th>
+            <th>Cedula</th>
+            <th>Celular</th>
+        </tr>
+        <tr>
+            <td>Mi Nombre</td>
             <td>Mi cedula</td>
             <td>Mi celular</td>
-          </tr>
-          <tr>
-             <td>Otro Nombre</td>
+        </tr>
+        <tr>
+            <td>Otro Nombre</td>
             <td>Otra cedula</td>
             <td>Otro celular</td>
-          </tr>          
-        </table>
-       <hr>
-       <table border="1">
-          <caption>Nombre o descripción de la tabla</caption>
-           <tr>
-                <td rowspan="2" colspan="2">Celda</td>
-                <td colspan="4">Celda</td>
-                <td>Celda</td>
-           </tr>
-           <tr>
-                <td>Celda</td>
-                <td colspan="2">Celda</td>
-                <td colspan="2">Celda</td>
-           </tr>
-           <tr>
-               <td rowspan="2">Celda</td>
-               <td rowspan="2">Celda</td>
-               <td>Celda</td>
-               <td colspan="2">Celda</td>
-               <td colspan="2">Celda</td>
-           </tr>
-           <tr>
-               <td colspan="2">Celda</td>
-               <td colspan="3">Celda</td>
-               
-           </tr>
-        </table>
-        <hr>
-        <table border="1">
-            <caption>Nombre o descripción de la tabla</caption>
-            <thead>
-               <tr>
-                   <th>Encabezado 1</th>
-                    <th>Encabezado 1</th>
-                </tr>
-            </thead>
-            <tbody>
-               <tr>
-                   <td>Contenido e1 f1</td>
-                   <td>Contenido e2 f1</td>
-               </tr>
-               <tr>
-                   <td>Contenido e1 f2</td>
-                   <td>Contenido e2 f2</td>
-               </tr>               
-            </tbody>
-            <tfoot>
-               <tr>
-                   <td>Resumen e1</td>
-                   <td>Resumen e2</td>
-               </tr>
-            </tfoot>
-        </table>
-        <hr>
-        <img src="images/html5.jpg" alt="HTML, JS, CSS">
-            <hr>
-           <form action="">
-               <label for="IdNombre">Nombre: </label>
-               <input type="text" id="IdNombre" placeholder="Nombre Completo" maxlength="120" size="120" required><br>
-               <label for="IdCedula">Cedula: </label>
-               <input type="number" id="IdCedula" min="1" required><br>
-               <input type="radio" name="genero" value="M" required>Masculino
-               <input type="radio" name="genero" value="F">Femenino<br> 
-               <label for="IdPassword">Contraseña: </label>
-               <input id="IdPassword" type="password" pattern="(?=.*/d)(?=.*[a-z])(?=.*[A-Z]){8,}" title="La contraseña debe tener al menos una letra minuscula y mayuscula como tambien un numero entero. Ademas su longitud debe ser ocho caracters"><br>
-               <label for="IdEmail">Email: </label>
-               <input type="email" id="IdEmail"> <br>
-               <textarea name="descripcion" id="IdDescripcion" cols="30" rows="10"></textarea> <br>
-               <select name="color">
+        </tr>
+    </table>
+    <hr>
+    <table border="1">
+        <caption>Nombre o descripción de la tabla</caption>
+        <tr>
+            <td rowspan="2" colspan="2">Celda</td>
+            <td colspan="4">Celda</td>
+            <td>Celda</td>
+        </tr>
+        <tr>
+            <td>Celda</td>
+            <td colspan="2">Celda</td>
+            <td colspan="2">Celda</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Celda</td>
+            <td rowspan="2">Celda</td>
+            <td>Celda</td>
+            <td colspan="2">Celda</td>
+            <td colspan="2">Celda</td>
+        </tr>
+        <tr>
+            <td colspan="2">Celda</td>
+            <td colspan="3">Celda</td>
+
+        </tr>
+    </table>
+    <hr>
+    <table border="1">
+        <caption>Nombre o descripción de la tabla</caption>
+        <thead>
+            <tr>
+                <th>Encabezado 1</th>
+                <th>Encabezado 1</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Contenido e1 f1</td>
+                <td>Contenido e2 f1</td>
+            </tr>
+            <tr>
+                <td>Contenido e1 f2</td>
+                <td>Contenido e2 f2</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Resumen e1</td>
+                <td>Resumen e2</td>
+            </tr>
+        </tfoot>
+    </table>
+    <hr>
+    <img src="images/html5.jpg" alt="HTML, JS, CSS">
+    <hr>
+    <a id="formularios"></a>
+    <form action="">
+        <label for="IdNombre">Nombre: </label>
+        <input type="text" id="IdNombre" placeholder="Nombre Completo" maxlength="120" size="120" required><br>
+        <label for="IdCedula">Cedula: </label>
+        <input type="number" id="IdCedula" min="1" required><br>
+        <input type="radio" name="genero" value="M" required>Masculino
+        <input type="radio" name="genero" value="F">Femenino<br>
+        <label for="IdPassword">Contraseña: </label>
+        <input id="IdPassword" type="password" pattern="(?=.*/d)(?=.*[a-z])(?=.*[A-Z]){8,}" title="La contraseña debe tener al menos una letra minuscula y mayuscula como tambien un numero entero. Ademas su longitud debe ser ocho caracters"><br>
+        <label for="IdEmail">Email: </label>
+        <input type="email" id="IdEmail"> <br>
+        <textarea name="descripcion" id="IdDescripcion" cols="30" rows="10"></textarea> <br>
+        <select name="color">
                    <optgroup label="Calidos">
                         <option value="red">Rojo</option>
                         <option value="green">Verde</option>
@@ -150,17 +158,21 @@
                    <optgroup label="Frios">
                         <option value="blue">Azul</option> 
                    </optgroup>
-               </select>  <br> 
-               <datalist id="IdDiccionario">
-                    <option value="Dario"/>
-                    <option value="Maria"/>
-                    <option value="Juan"/>
-                    <option value="Chamorro"/>
-                    <option value="Juana"/>
-                </datalist>
-                <input list="IdDiccionario" placeholder="Nombre"/><br>         
-               <input type="submit" value="Guardar">
-               <input type="reset" value="Borrar"><br>
-           </form>
-    </body>
+               </select> <br>
+        <datalist id="IdDiccionario">
+            <option value="Dario" />
+            <option value="Maria" />
+            <option value="Juan" />
+            <option value="Chamorro" />
+            <option value="Juana" />
+        </datalist>
+        <input list="IdDiccionario" placeholder="Nombre" /><br>
+        <input type="submit" value="Guardar">
+        <input type="reset" value="Borrar"><br>
+    </form>
+    <a id="frames"></a>
+    <iframe src="pantalla2.html" frameborder="1"></iframe>
+   <div class="contenido2">Contenido 2</div>
+</body>
+
 </html>

@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    min-height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    min-height: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: flex-start;
+}
+
+.item {
+    width: 150px;
+    height: 150px;
+}
+
+.item.blue {
+    background: #33b5e6;
+    flex: 1;
+}
+
+.item.yellow {
+    background: yellow;
+}
+
+.item.red {
+    background: #ff4444;
+    flex: 1;
+}
+

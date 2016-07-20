@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="javascript">
+    <meta name="description" content="javascript">
+    <title>Javascript</title>
+    <link rel="shorcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/calculadora.css">
+    <script>
+           var resultado = 0;
+           var o1 = 5;
+           var o2 = 6;
+           resultado = o1 + o2;
+           console.log("Resultado: " + resultado);
+
+           var dividendo = 5;
+           var divisor = 0;
+
+           if(divisor == 0) {
+              // alert(dividendo + "/" + divisor + " = Infinito");
+           } else {
+               var res = dividendo / divisor;
+               //alert(dividendo + " / " + divisor + " = " + res );
+           }
+       </script>
+</head>
+
+<body>
+    <form>
+        <input type="number" value="0">
+        <div class="row">
+            <input type="button" value="1">
+            <input type="button" value="2">
+            <input type="button" value="3">
+            <input type="button" value="+">
+        </div>
+        <div class="row">
+            <input type="button" value="4">
+            <input type="button" value="5">
+            <input type="button" value="6">
+            <input type="button" value="-">
+        </div>
+        <div class="row">
+            <input type="button" value="7">
+            <input type="button" value="8">
+            <input type="button" value="9">
+            <input type="button" value="*">
+        </div>
+        <div class="row">
+            <input type="button" value="0">
+            <input type="reset" value="C">
+            <input type="button" value="=">
+            <input type="button" value="/">
+        </div>
+    </form>
+</body>
+
+</html>

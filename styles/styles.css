@@ -1,0 +1,238 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+/*
+@font-face {
+    font-family: nombreDeLaFuentePersonalizada;
+    src: url(Path);
+}
+*/
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+    height: 100vh;
+    /*font-family: rbt;*/
+}
+.center-crop {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img-main {
+    background-image: url("../images/leon.jpg");
+    height: 100px;  
+}
+
+.nav {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav li {
+    /*display: inline-block;*/
+    float: left;
+}
+
+.nav li a {
+    cursor: pointer;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: lighter;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+.nav li:hover, .downdrop-content a:hover {
+    background: #ddd;
+}
+
+.nav .login {
+    background: #33b5e5;
+    color: white;
+    float: right;
+}
+
+.nav .login a{
+        color: white;
+    }
+.nav .login a:hover {
+    background: royalblue;
+}
+
+.downdrop-content {
+    display: none;
+    position: absolute;
+    width: 180px;
+    background: #e6e6e6;
+    box-shadow: 2px  2px 5px rgba(0, 0, 0, .3);
+}
+
+.downdrop-content a {
+    padding: 10px;
+}
+
+.downdrop-content a:hover {
+    background: #33b5e5;
+    color: #fff;
+}
+
+/*cuando se posicione sobre downdrop se aplicara la clase .downdrop-content*/
+.downdrop:hover .downdrop-content {
+    display: block;
+}
+
+
+/*Si se genera un scroll no afecta a toda la pantalla. Unicamente en donde se encuentre la clase .conteiner*/
+/*
+.section {
+    display: block;
+    min-height: 400px;
+    padding: 20px;
+}
+.conteiner {
+    overflow: auto;
+    clear: left;
+    display: block;
+    height: 90%;
+    min-height: 90%;
+}
+
+.conteiner > div {
+    min-height: 400px;
+    padding: 20px;
+
+}
+*/
+
+/*odd->impares, even->pares, na+b*/
+/*
+.conteiner > div:nth-child(even) {
+    background: #efefef;
+}
+*/
+
+.container {
+    overflow: auto;
+    flex: 1;
+}
+.table1, .table2 {
+    width: 100%;
+    border-collapse: collapse;
+    /*border: 1px solid #777;*/
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+}
+
+section:nth-child(even) {
+    background: #ccc;
+}
+
+.table1 td , .table1 th, .table2 td, .table2 th {
+    padding: 10px;
+    text-align: center;
+}
+
+.table1 tr:nth-child(even) {
+    background: #ddd;
+}
+.table1 tr:nth-child(odd) {
+    background: #bbb;
+}
+
+.table1 tr:first-child {
+    background: dodgerblue;
+    color: white;
+}
+
+.table2 tr {
+    border-bottom: 1px solid #333;
+}
+.table2 tr:first-child {
+    background: mediumseagreen;
+    color: white;
+    border: none;
+}
+.table2 td:first-child {
+    font-weight: bold;
+}
+
+form input {
+    display: block;
+    width: 100%;
+    margin: 5px 0px 15px 0px;
+}
+
+form input[type="submit"]{
+    width: auto;
+    padding: 7px;
+    background: #33b5e5;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    -webkit-transition: background .5s, box-shadow .5s;
+    -moz-transition: background .5s, box-shadow .5s;
+    transition: background .5s, box-shadow .5s;
+}
+
+form input[type="submit"]:hover {
+    background: dodgerblue;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, .3);
+    cursor: pointer;
+}
+
+form input[type="text"], form input[type="email"], form textarea {
+    border: 1px solid #777;
+    border-radius: 10px;
+    padding: .4em;
+
+}
+
+form input[type="text"]:focus, form input[type="email"]:focus, form textarea:focus {
+    border: 2.5px solid lightseagreen;
+    border-radius: 10px;
+    outline: none;
+}
+
+form label {
+    font-size: .7em;
+    font-weight: bold;
+}
+
+main {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    min-height: 80px;
+
+}
+
+@media only screen and (min-width:600px) {
+    .img-main {
+        height: 200px;  
+    }
+}
+
+@media only screen and (min-width:960px) {
+    .img-main {
+        height: 270px;  
+    }
+}

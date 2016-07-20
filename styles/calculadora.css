@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body, form {
+    min-height: 100vh;
+    height: 100vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex: 1;
+}
+
+.row input {
+    flex: 1;
+    background: #ddd;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    font-size: 2em;
+}
+
+.row input:last-child {
+    background: dodgerblue;
+    color: white;
+}
+
+input[type = "number"] {
+    width: 100%;
+    background: #333;
+    padding: 12px;
+    font-size: 2em;
+    color: white;
+}
+
+.row input:hover {
+    background: #eee;
+}
+
+.row input:last-child:hover {
+    background: royalblue;
+}
