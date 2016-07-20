@@ -19,14 +19,39 @@ function testObj() {
     test.innerHTML = JSON.stringify(obj);
 }
 
-function savaUsr() {
-    let nombre = Document.getElementById("nombre");
-    let cedula = Document.getElementById("cedula");
-    let celular = Document.getElementById("celular");    
-    let usr = { 
+function saveUsr() {
+    var nombre = document.getElementById("nombre");
+    var cedula = document.getElementById("cedula");
+    var celular = document.getElementById("celular");    
+    var usr = { 
         nombre:nombre.value,
         cedula:cedula.value,
         celular:celular.value
-    }
+    };
     data.push(usr);
+    data.sort(function(a,b) {
+        return a.cedula - b.cedula;
+    });
+    nombre.value = "";
+    cedula.value = "";
+    celular.value = "";   
+    loadList();
+}
+
+function loadList() {
+    var list = document.getElementById("lista");
+    list.innerHTML = "";
+    for(i = 0; i < data.length; i++) {
+        let usr = data[i];
+        list.innerHTML += "<h1>" + usr.nombre + "</h1>"
+            + "<p><b>Cedula: </b>" + usr.cedula + "</p>"
+            + "<p><b>Celular: </b>" + usr.celular + "</p>"
+            + "<button onclick=\"deleteusr(" + i + ")\">Borrar</button>"
+            + "<hr>";
+    }
+}
+
+function deleteusr(pos) {
+    data.splice(pos, 1);
+    loadList();
 }
