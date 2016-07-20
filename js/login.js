@@ -33,7 +33,7 @@ function stop() {
     if(timeInterval != null) {
         clearInterval(timeInterval);
     }
-    putSec(0, 0);
+    putSec(0, 0, "hora");
     min = 0;
     sec = 0;
 }
@@ -44,11 +44,11 @@ function countSec() {
         min++;
         sec = 0;
     }
-    putSec(min, sec);
+    putSec(min, sec, "hora");
 }
 
-function putSec(m, s) {
-    var hora = document.getElementById("hora");
+function putSec(m, s, id) {
+    var hora = document.getElementById(id);
     hora.innerHTML = getFormat(m) + ":" + getFormat(s);
 }
 
@@ -60,4 +60,11 @@ function getFormat(n) {
         ns = "" + n;
     }
     return ns;    
+}
+
+function initTime() {
+    setInterval(function () {
+        var date = new Date();
+        putSec(date.getHours(), date.getMinutes(), "tiempo");
+    }, 1000);
 }

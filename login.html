@@ -11,7 +11,7 @@
     <script src="js/login.js"></script>
 </head>
 
-<body>
+<body onload="initTime()">
     <label for="usr">Usuario</label>
     <input id="usr" type="text"><br>
     <label for="usr">Contraseña</label>
@@ -20,11 +20,13 @@
        </button>
     <div id="msg">
     </div>
-   <hr>
-  <button onclick="start()">Inciar</button>
-  <button onclick="pause()">Pausar</button>
-  <button onclick="stop()">Detener</button>
- <div id="hora"></div>
+    <hr>
+    <button onclick="start()">Inciar</button>
+    <button onclick="pause()">Pausar</button>
+    <button onclick="stop()">Detener</button>
+    <div id="hora"></div>
+    <hr>
+    <div id="tiempo">00:00</div>
 </body>
 
 </html>
